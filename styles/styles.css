@@ -47,6 +47,9 @@ body {
     text-decoration: none;
     color: var(--cor-primaria);
     background-color: var(--cor-terciaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cabecalho_menu_link:hover {
@@ -147,10 +150,21 @@ body {
     }
 
     .cabecalho_menu {
-        width: 50%;
+        width: 100%;
         gap: 10%;
         justify-content: center;
     }
+
+    .imagem_nicolas {
+        min-width: 40%;
+    }
+
+    @media (max-width:600px) {
+        .imagem_nicolas {
+            min-width: 80%;
+        }
+    }
+
 
     .apresentacao {
         padding: 5%;
